@@ -2,4 +2,4 @@
 
 ## Contributors
 - Jeremiah Kellam
-- Matthew Longley
+- Joseph Issa
