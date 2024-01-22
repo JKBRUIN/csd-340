@@ -1,0 +1,40 @@
+/*
+Jeremiah Kellam
+CSD340 Assignment 3.2
+1/21/2024
+*/
+
+
+html, body{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+
+h1, h2, h3, h4{
+    background-color: #6F2DA8;
+    color: whitesmoke;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a:link{
+    font-weight: bold;
+    color: #2CD3E1;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+a:visited{
+    color: #F266AB;
+}
