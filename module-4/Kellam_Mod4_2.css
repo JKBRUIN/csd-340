@@ -17,12 +17,6 @@ html {
     justify-content: space-between;
 }
 
-.image-gallery {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 .gallery {
     flex: 1;
     border: 1px solid rgb(175, 138, 5, 1);
