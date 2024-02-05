@@ -26,7 +26,7 @@ h1, h2, h3, h4{
 
 a:link{
     font-weight: bold;
-    color: #2CD3E1;
+    color: #CB1BF7;
     text-decoration: none;
 }
 
@@ -36,5 +36,5 @@ a:hover{
 }
 
 a:visited{
-    color: #F266AB;
+    color: #e7a6ff;
 }
