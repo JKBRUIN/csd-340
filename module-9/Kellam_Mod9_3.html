@@ -1,0 +1,56 @@
+<!-- Jeremiah Kellam: CSD340 Assignment 9.3 JavaScript Part 1-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremiah Kellam">
+    <meta name="description" content="CSD 340 Module 9 Assignment 9.3 - JavaScript part 1">
+    <link rel="stylesheet" href="Kellam_Mod9_3.css">
+    <script>
+        var firstVariableValue = "Indiana";
+    </script>
+    <script>
+        var secondVariableValue = "football";
+    </script>
+    <script>
+        var thirdVariableValue = "biology";
+    </script>
+    <script>
+        var fourthVariableValue = "quality control";
+    </script>
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3 - JavaScript Part 1</h1>
+        <br>
+        <p class="intro">I'm from a small town in central <span id = "Indiana">_________</span>. My highschool class was 92 students and was the biggest class in over a decade. We were surrounded by woods and fields.</p>
+        <p>I played <span id = "football">_________</span> starting in the 5th grade through the beginning of college.  I was a lineman.  It was fun but tough.  I ended up getting cut after a new coach was hired.</p>
+        <p>I loved science growing up, so I studied <span id = "biology">_________</span>.  I couldn't earn good money (pay bills) without 10 years of experience or going to graduate school.  I moved to NWI to work in a tool crib at an automotive factory for double the pay.</p>
+        <p>Because I could pay bills now, I got my own apartment and paid off my car.  After five years, I was able to land a job in production at a soda factory.  After four more years, I was able to transfer in to <span id = "quality control">_________</span> (one year short of 10 years experience).  So now I use some science again at work, but I deal with mostly data and audit compliance.  <span class="sentence">I enrolled in this program at Bellevue to get a more applicable degree that I'll use in many more fields.  This is my second attempt in the class because I had to withdraw for a family medical emergency.  I wish I didn't have to leave but I still need to do this to move into the fields I would like to retire from.</span></p>
+        <p>
+            <button type="button"
+              onclick="document.getElementById('Indiana').innerHTML = firstVariableValue">Indiana</button> <br />   
+        </p> 
+        <p>
+            <button type="button"
+              onclick="document.getElementById('football').innerHTML = secondVariableValue">football</button> <br />   
+        </p> 
+        <p>
+            <button type="button"
+              onclick="document.getElementById('biology').innerHTML = thirdVariableValue">biology</button> <br />   
+        </p> 
+        <p>
+            <button type="button"
+              onclick="document.getElementById('quality control').innerHTML = fourthVariableValue">quality control</button> <br />   
+        </p> 
+        <hr />
+    <address>
+        <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+        <p>1000 Galvin Road S</p>
+        <p>Bellevue, NE 68005</p>
+    </address>
+    </div>
+</body>
+</html> 
