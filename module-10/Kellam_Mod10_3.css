@@ -1,0 +1,69 @@
+/*
+Jeremiah Kellam
+CSD340 Assignment 10.3
+2/25/2024
+*/
+
+html {
+    background-color: rgba(189, 152, 241, 0.8);
+}
+
+#container {
+    margin-top: 10%;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {
+    flex: 1;
+    border: 1px solid rgb(175, 138, 5, 1);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+figure img:hover {
+    transform: scale(1.1); /*make the img pop*/
+}
+
+h1 {
+    text-align: center;
+    color: rgba(102, 51, 153, 0.8); 
+}
+
+h3 {
+    text-align: center;
+    color: rgba(140, 20, 252, 0.8); 
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 255, 0.8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bottom-div {
+    float: right;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,60 @@
+<!-- Jeremiah Kellam: CSD340 Assignment 10.3 Step 2 - 2/25/2024-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremiah Kellam">
+    <meta name="description" content="CSD 340 Module 10 Assignment 10.3">
+    <link rel="stylesheet" href="Kellam_Mod10_3.css">
+    <title>
+        CSD 340 Development with HTML and CSS
+    </title>
+</head>
+<body>
+    <div id="container">
+        <h1>
+            Assignment 10.3: JavaScript - Part 2
+        </h1>
+        <br>
+        <div class="image-gallery">
+            <div class="gallery">
+                <h3>
+                    Catch-22
+                </h3>
+                <figure>
+                    <img src="images\Catch-22.png" alt="Catch-22" onclick="playSound('catch22_help_him.mp3')">
+                </figure>
+                <figcaption>(author: Joseph Heller)</figcaption>
+            </div>
+            <div class="gallery">
+                <h3>
+                    I, Jedi
+                </h3>
+                <figure>
+                    <img src="images\I, Jedi.png" alt="I, Jedi" onclick="playSound('jedi.mp3')">
+                </figure>
+                <figcaption>(author: Michael A. Stackpole)</figcaption>
+            </div>
+            <div class="gallery">
+                <h3>
+                    Jurassic Park
+                </h3>
+                <figure>
+                    <img src="images\Jurassic Park.png" alt="Jurassic Park" onclick="playSound('welcome.mp3')">
+                </figure>
+                <figcaption>(author: Michael Crichton)</figcaption>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <a href="https://jkbruin.github.io/csd-340/">Back to Landing Page</a>
+        </div>
+    </div>
+    <script>
+        function playSound(soundfile) {
+            var audio = new Audio('soundclips/' + soundfile);
+            audio.play();
+        }
+    </script>
+</body>
+</html> 
