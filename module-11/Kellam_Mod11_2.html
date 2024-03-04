@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremiah Kellam">
+    <meta name="description" content="CSD 340 Module 11 Assignment 11.2">
+    <link rel="stylesheet" href="Kellam_Mod11_2.css">
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <p>This is an interactive To Do List. <br>Type in your first item in the text input box, then click the 'Add' button. <br>Click the 'Display' button to see the current items in the list. <br>Enter the index of the item you want to delete and click on 'Delete Entry'.</p>
+        <input type="text" id="inputBox">
+        <button onclick="addElement()">Add</button>
+        <button onclick="deleteEntry()">Delete Entry</button>
+        <button onclick="displayArray()">Display</button>
+        <br>
+        <!-- Container for displaying the To Do List -->
+        <div id="toDoList"></div>
+    </div>
+    <script>
+        // Array to store the To Do List items
+        let array = [];
+
+        // Function to add an item to the To Do List
+        function addElement() {
+          let input = document.getElementById("inputBox").value;
+          if (input.trim() !== "") {
+            array.push(input);
+            updateToDoList();
+            alert("Added '" + input + "' as item " + array.length);
+          }
+          document.getElementById("inputBox").value = "";
+        }
+
+        // Function to delete an item from the To Do List
+        function deleteEntry() {
+          let indexToDelete = prompt("Enter item # you want to delete:");
+          indexToDelete = parseInt(indexToDelete);
+          if (!isNaN(indexToDelete) && indexToDelete >= 1 && indexToDelete <= array.length) {
+            let deletedElement = array.splice(indexToDelete - 1, 1)[0];
+            updateToDoList();
+            alert("Deleted item # " + indexToDelete + ": '" + deletedElement + "'");
+          } else {
+            alert("Invalid item #. Please enter a valid item #.");
+          }
+        }
+
+        // Function to display the To Do List items in a pop-up alert
+        function displayArray() {
+          let displayText = "";
+          for (let i = 0; i < array.length; i++) {
+            displayText += (i + 1) + ". " + array[i] + "\n";
+          }
+          alert("To Do List Contents:\n" + displayText);
+        }
+
+        // Function to update the display of the To Do List on the webpage
+        function updateToDoList() {
+          let displayText = "";
+          for (let i = 0; i < array.length; i++) {
+            displayText += (i + 1) + ". " + array[i] + "<br>";
+          }
+          document.getElementById("toDoList").innerHTML = "<p>To Do List Contents:</p>" + displayText;
+        }
+    </script>
+    <footer>
+        <p1>Copyright 2024 - Kellam</p1>
+        <p2><a href="https://jkbruin.github.io/csd-340/">Back to Landing Page</a></p2>        
+    </footer>
+</body>
+</html>
